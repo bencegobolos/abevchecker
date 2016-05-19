@@ -3,7 +3,7 @@ import sys
 
 regex_fejadat = re.compile("^VF\|(.)+$")
 regex_teteladat = re.compile("^VT\|(.)+$")
-regex_check_fejadat = re.compile("^VF\|12\|(.)+$")
+regex_check_fejadat = re.compile("^VF\|12\|[a-zA-Z0-9]{,8}\|[a-zA-Z0-9]{13}\|(.){1,70}\|[a-zA-Z0-9]{,20}\|[a-zA-Z0-9]{,10}\|(.){3,20}\|[0-9]{4}\|(.){3,20}\|(.){3,30}\|1\|\|\|[a-zA-Z0-9]{2,20}\|[0-9]{8}\|[0-9]{8}\s+$")
 regex_check_teteladat = re.compile("^VT\|(.)+$")
 
 def read_file(file_path):
